@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>C♯ の入力補助サイト | Gifted Style</title>
+    <meta name="description" content="C♯ の入力補助サイトです。ボタンを押すとその内容がクリップボードにコピーされます。"/>
+  </head>
+<body>
+このサイトは C♯ の入力補助サイトです。</br></br>ボタンを押すと、その内容がクリップボードにコピーされます。</br>Ctrl キーを押しながらボタンを押すと、説明文が見れます。</br></br>
+<button onclick="Button1()">for (int i = 0; i < ; i++) {</button>
+<button onclick="Button3()">for (int j = 0; j < ; j++) {</button>
+<button onclick="Button2()">foreach (var one in ) {</button>
+<button onclick="Button4()">DateTime.Now.ToString(&quot;yyyyMMdd-HHmmss&quot;)</button></br></br>
+<button onclick="Button5()">System.Collections.Generic.List&lt;&gt; List = new();</button>
+<button onclick="Button6()">switch() {case1:case2:default:}</button>
+<button onclick="Button7()">try{}catch(System.Exception e){}</button>
+<button onclick="Button8()">try{}catch{}</button></br></br>
+<button onclick="Button9()">int count = 0;</button>
+<button onclick="Button10()">System.Text.StringBuilder stringBuilder = new();</button>
+
+
+<script>
+  function Button1(str) {
+    if (event.ctrlKey) {
+      alert("for 文のループ文です。\n\n何回回すかの部分を補完して下さい。\n\n例：\nfor(int i = 0; i < list.Count; i++) {");
+      return;
+    }
+    navigator.clipboard.writeText("for(int i = 0; i < ; i++) {");
+  }
+  function Button2(str) {
+    if (event.ctrlKey) {
+      alert("foreach 文です。\n\n配列を指定する部分を補完して下さい。");
+      return;
+    }
+    navigator.clipboard.writeText("foreach(var one in ) {");
+  }
+  function Button3(str) {
+    if (event.ctrlKey) {
+      alert("for 文のループ文です。\n\n何回回すかの部分を補完して下さい。\n\n例：\nfor(int i = 0; i < list.Count; i++) {");
+      return;
+    }
+    navigator.clipboard.writeText("for(int j = 0; j < ; j++) {");
+  }
+  function Button4(str) {
+    if (event.ctrlKey) {
+      alert("現在の時刻の String を yyyyMMdd-HHmmss で取得します。");
+      return;
+    }
+    navigator.clipboard.writeText("DateTime.Now.ToString(\"yyyyMMdd-HHmmss\")");
+  }
+  function Button5(str) {
+    if (event.ctrlKey) {
+      alert("List を宣言します。\n\n中括弧内に型を入れて下さい。\n\n変数名の前に何リストなのか単語を入れて下さい。\n\n例：\nList<string> wordList = new();");
+      return;
+    }
+    navigator.clipboard.writeText("System.Collections.Generic.List<> List = new();");
+  }
+  function Button6(str) {
+    if (event.ctrlKey) {
+      alert("switch 文です。\n\n改行して整形して下さい。");
+      return;
+    }
+    navigator.clipboard.writeText("switch() {case1:case2:default:}");
+  }
+  function Button7(str) {
+    if (event.ctrlKey) {
+      alert("try-catch 文です。\n\n改行して整形して下さい。");
+      return;
+    }
+    navigator.clipboard.writeText("try{}catch(System.Exception e){}");
+  }
+  function Button8(str) {
+    if (event.ctrlKey) {
+      alert("try-catch 文です。\n\n改行して整形して下さい。");
+      return;
+    }
+    navigator.clipboard.writeText("try{}catch{}");
+  }
+  function Button9(str) {
+    if (event.ctrlKey) {
+      alert("count を回す時に使います。");
+      return;
+    }
+    navigator.clipboard.writeText("int count = 0;");
+  }
+  function Button10(str) {
+    if (event.ctrlKey) {
+      alert("StringBuilder です。\n\n文字列結合が多く発生する場合は\nメモリを節約できるため高速化できます。\n\nAppend で結合していきます。\n\nToString で取得します。");
+      return;
+    }
+    navigator.clipboard.writeText("System.Text.StringBuilder stringBuilder = new();");
+  }
+</script>
+</body>
+</html>
+
