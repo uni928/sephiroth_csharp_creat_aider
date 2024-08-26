@@ -10,12 +10,12 @@
 <button onclick="Button2()">foreach (var one in ) {</button>
 <button onclick="Button4()">DateTime.Now.ToString(&quot;yyyyMMdd-HHmmss&quot;)</button></br></br>
 <button onclick="Button5()">System.Collections.Generic.List&lt;&gt; List = new();</button>
-<button onclick="Button6()">switch() {case1:case2:default:}</button>
+<button onclick="Button11()">List&lt;&gt; List = new();</button>
 <button onclick="Button7()">try{}catch(System.Exception e){}</button>
 <button onclick="Button8()">try{}catch{}</button></br></br>
 <button onclick="Button9()">int count = 0;</button>
 <button onclick="Button10()">System.Text.StringBuilder stringBuilder = new();</button>
-
+<button onclick="Button6()">switch() {case 1:case 2:default:}</button>
 
 <script>
   function Button1(str) {
@@ -58,7 +58,7 @@
       alert("switch 文です。\n\n改行して整形して下さい。");
       return;
     }
-    navigator.clipboard.writeText("switch() {case1:case2:default:}");
+    navigator.clipboard.writeText("switch() {case 1:case 2:default:}");
   }
   function Button7(str) {
     if (event.ctrlKey) {
@@ -87,6 +87,13 @@
       return;
     }
     navigator.clipboard.writeText("System.Text.StringBuilder stringBuilder = new();");
+  }
+  function Button11(str) {
+    if (event.ctrlKey) {
+      alert("List を宣言します。\n\n中括弧内に型を入れて下さい。\n\n変数名の前に何リストなのか単語を入れて下さい。\n\n例：\nList<string> wordList = new();");
+      return;
+    }
+    navigator.clipboard.writeText("List = new();");
   }
 </script>
 </body>
