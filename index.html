@@ -48,7 +48,7 @@
   }
   function Button5(str) {
     if (event.ctrlKey) {
-      alert("List を宣言します。\n\n中括弧内に型を入れて下さい。\n\n変数名の前に何リストなのか単語を入れて下さい。\n\n例：\nList<string> wordList = new();");
+      alert("List を宣言します。\n\nSystem.Collections.Generic を import していない場合はこちらをご利用下さい。\n\n中括弧内に型を入れて下さい。\n\n変数名の前に何リストなのか単語を入れて下さい。\n\n例：\nSystem.Collections.Generic.List<string> wordList = new();");
       return;
     }
     navigator.clipboard.writeText("System.Collections.Generic.List<> List = new();");
@@ -98,4 +98,3 @@
 </script>
 </body>
 </html>
-
